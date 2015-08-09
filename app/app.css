@@ -1,0 +1,251 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+/*******************/
+/** 공통 스타일 **/
+.base-div{
+  width:66vh;
+  height:100vh;
+}
+
+a { padding:15px; font-weight:bold; float:left; }
+a:link { color:#FFFFFF;}
+a:visited { color:#FFFFFF; }
+a:hover { color:#FFFFFF; background-color:#000060; }
+a:active { color:#FFFFFF; background-color:#0000a0; }
+
+
+/*******************/
+/** 내집 관련 스타일 **/
+.my-home{
+  background-image : url("img/home_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*pet*/
+.my-home .pet{
+  background-image : url("img/corgi.gif");
+  background-size: cover;
+  width:10vh;
+  height:15vh;
+  position: absolute;
+  top: 70vh;
+  left: 35vh
+}
+
+.my-home .bottom-menu{
+  background-color : #336699;
+  position: absolute;
+  bottom: 0;
+}
+
+/***********************/
+/** 내글 쓰기 화면 스타일 **/
+.write-my-story{
+  background-image : url("img/home_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*pet*/
+.write-my-story .pet{
+  background-image : url("img/corgi.gif");
+  background-size: cover;
+  width:10vh;
+  height:15vh;
+  position: absolute;
+  top: 5vh;
+  left: 10vh
+}
+
+/* 쓰기영역 */
+.write-my-story .write-area{
+  position: absolute;
+  top: 25vh;
+  width: 66vh;
+  height : 60vh;
+  text-align:center;
+}
+
+.write-my-story .write-area textarea{
+  width: 90%;
+  height : 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* 하단버튼 */
+.write-my-story .bottom-menu{
+  position: absolute;
+  bottom: 0;
+  width:66vh;
+}
+
+.write-my-story .bottom-menu a{
+  float: right;
+}
+
+
+
+/***************************/
+/** 내글 목록 보기 화면 스타일 **/
+.read-my-story{
+  background-image : url("img/home_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align:center;
+}
+
+.read-my-story .my-story-list{
+  position: absolute;
+  top: 15vh;
+  width: 66vh;
+  height: 80vh;
+}
+
+.read-my-story .my-story-list ul{
+  width: 80%;
+  height: 100%;
+}
+
+.read-my-story .my-story-list ul>li{
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top : 10px;
+  border : #FFFFFF solid 1px;
+}
+
+/***************************/
+/** 애완동물 광장 화면 스타일 **/
+.pet-square{
+  background-image : url("img/square_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align:center;
+}
+
+/*pet*/
+.pet-square .pet{
+  background-size: cover;
+  position: absolute;
+  width:15vh;
+  height:15vh;
+}
+
+.pet-square .pet-story{
+  background-size: cover;
+  position: absolute;
+  width:30vh;
+  height:30vh;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.pet-square .pet-story .bottom-menu{
+  background-color : #336699;
+  position: absolute;
+  bottom: 0;
+  width:30vh;
+}
+
+.pet-square .pet-story .bottom-menu a{
+  float:right;
+}
+
+
+/**********************/
+/** 답장하기 화면 스타일 **/
+.reply-story{
+  background-image : url("img/square_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align:center;
+}
+
+/*pet*/
+.reply-story .pet{
+  background-size: cover;
+  position: absolute;
+  width:15vh;
+  height:15vh;
+}
+
+
+
+.reply-story .story-content{
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  width:50vh;
+  height:30vh;
+  top: 10vh;
+  left: 8vh
+}
+
+/*pet*/
+.reply-story .my-pet{
+  background-image : url("img/corgi.gif");
+  background-size: cover;
+  width:15vh;
+  height:15vh;
+  position: absolute;
+  top: 40vh;
+  left: 10vh
+}
+
+.reply-story .your-pet{
+  background-image : url("img/shiba.png");
+  background-size: cover;
+  width:15vh;
+  height:15vh;
+  position: absolute;
+  top: 40vh;
+  left: 40vh
+}
+
+.reply-story .reply-content{
+  background-color: rgba(255, 255, 255, 0.8);
+  background-size: cover;
+  position: absolute;
+  width:50vh;
+  height:30vh;
+  top: 60vh;
+  left: 8vh
+}
+
+.reply-story .bottom-menu{
+  background-color : #336699;
+  position: absolute;
+  bottom: 0;
+  width:66vh;
+}
+
+.reply-story .bottom-menu a{
+  float:right;
+}

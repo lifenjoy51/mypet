@@ -1,0 +1,31 @@
+<div class="base-div pet-square">
+
+  <!-- 상단 메뉴. -->
+  <div class="top-menu">
+    <a href="#/myHome">내집</a>
+  </div>
+
+  <div ng-repeat="(id, pet) in pets">
+    <!-- 애완동물. -->
+    <div ng-model="unit" class="pet" id="{{id}}" ng-click="displayPopup(id);"
+    style="
+      top: {{pet.top}};
+      left: {{pet.left}};
+      background-image : url('{{pet.url}}');
+    ">
+    </div>
+    <!-- 팝업창 -->
+    <div class="pet-story" ng-show="pet.selected"
+    style="
+    top: {{pet.contentTop}};
+    left: {{pet.contentLeft}};
+    ">
+      {{pet.content}}
+      <!-- 답장하기 -->
+      <div class="bottom-menu">
+        <a href="#/replyStory">답장하기</a>
+      </div>
+    </div>
+  </div>
+
+</div>
